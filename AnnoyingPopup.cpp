@@ -25,7 +25,104 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
-    // TODO: Place code here.
+   
+  HWND hWnd = CreateWindow(
+
+		szWindowClass,
+
+		szTitle,
+
+		WS_OVERLAPPEDWINDOW,
+
+		CW_USEDEFAULT, CW_USEDEFAULT,
+
+		500, 100,
+
+		NULL,
+
+		NULL,
+
+		hInstance,
+
+		NULL
+
+	);
+
+	if (!hWnd)
+
+	{
+
+
+
+		MessageBox(NULL,
+
+			_T("Hi there how are you?"),
+
+			_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+			NULL);
+
+
+
+		MessageBox(NULL,
+
+			_T("Trying to leave so soon?"),
+
+			_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+			NULL);
+
+		MessageBox(NULL,
+
+			_T("Try to exit this window one more time... and see what happens!"),
+
+			_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+			NULL);
+
+
+
+		MessageBox(NULL,
+
+			_T("Im WARNING YOU!"),
+
+			_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+			NULL);
+
+		MessageBox(NULL,
+
+			_T("Thats it! I'm Hacking your computer!"),
+
+			_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+			NULL);
+
+		MessageBox(NULL,
+
+			_T("HACK COMPLETE!"),
+
+			_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+			NULL);
+
+
+
+		for (int count = 0; count <= 100; count++)
+
+
+
+			MessageBox(NULL,
+
+				_T("YOUR COMPUTER NOW HAS A VIRUS!"),
+
+				_T("YOU ARE AT THE WRONG PLACE AT THE WRONG TIME!"),
+
+				NULL);
+
+		return 1;
+
+	}
 
     // Initialize global strings
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
